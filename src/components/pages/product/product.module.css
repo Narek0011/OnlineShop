@@ -1,0 +1,171 @@
+.productImage img {
+    padding: 10px;
+    border: 1px solid rgb(221 221 221);
+}
+
+.tittle {
+    font-family: 'Montserrat';
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.tittle h1 {
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 20px;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: initial;
+    font-weight: 700;
+}
+
+.rating span a {
+    color: rgba(20, 102, 120, 1);
+}
+
+.rating span a:hover {
+    text-decoration: none;
+}
+
+.dateProduct {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 36px;
+    padding: 10px 0 10px 0;
+    border-top: 1px solid rgb(221 221 221);
+    border-bottom: 1px solid rgb(221 221 221);
+}
+
+.block2 {
+    border-left: 1px solid rgb(221 221 221);
+    padding-left: 30px;
+}
+
+.productPrice {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.modelContainer {
+    padding: 5px;
+    border: 1px solid rgb(221 221 218);
+}
+
+.modelName {
+    font-size: 13px;
+    color: #146678;
+    cursor: pointer;
+}
+
+.addToCart {
+    margin-top: 32px;
+}
+
+.size {
+    background: rgba(255, 255, 255, 1);
+    font-family: 'Nunito Sans';
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(221 221 221);
+    line-height: 1.5;
+}
+
+.colorContainer {
+    display: flex;
+}
+
+.colorContainer div {
+    margin-right: 10px;
+}
+
+
+.colorContainer2 :hover {
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.colorContainer2 {
+    margin-top: 5px;
+    margin-right: 3px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.dark {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: darkgray;
+}
+
+.yellow {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: yellow;
+}
+
+.steel {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: steelblue;
+}
+
+.buttonsContainer {
+    margin-top: 32px;
+    padding: 20px 5px;
+    border-top: 1px solid rgb(221 221 221);
+}
+
+.inputNumber {
+    border-radius: 0;
+    font-size: 18px;
+    width: 50px;
+    height: 48px;
+}
+
+.addCardBtn {
+    width: 404px;
+    height: 48px;
+    color: #dddddd;
+    background-color: #3A4754;
+    border: 2px solid #222931;
+}
+
+.byeBtn {
+    width: 125px;
+    height: 48px;
+    border: none;
+    color: #dddddd;
+    background-color: #146678;
+}
+
+.bottomBtn {
+    width: 300px;
+    height: 45px;
+    border: 1px solid #696973;
+    background-color: #ffffff;
+}
+
+.tabsContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+.myDiv {
+    pointer-events: none;
+    opacity: 0.8;
+}
+
+.active{
+    border-color: rgba(0, 0, 0, 1);
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.7);
+}
+
+

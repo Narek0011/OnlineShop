@@ -1,0 +1,64 @@
+.borderBottom {
+    border-bottom: 1px solid #dddddd;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 20px 0;
+}
+
+.searchSelect {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 40px;
+    border-radius: 41% 0 0 41%;
+    color: white;
+    background: rgba(20, 102, 120, 1);
+}
+
+.iconDown {
+    width: 12px;
+    height: 14px;
+}
+
+.searchInput {
+    width: 500px;
+    height: 41px;
+    border-radius: 0;
+    border: 0;
+    box-shadow: none;
+    padding: 0 12px;
+    background: rgb(233, 235, 238);
+}
+
+.searchBtn {
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 40px;
+    border-radius: 0 45% 45% 0;
+    border: none;
+    padding-bottom: 5px;
+    background: rgba(20, 102, 120, 1);
+}
+
+.account {
+    font-weight: 700;
+    font-size: 15px;
+    color: rgba(58, 71, 84, 1);
+    text-transform: none;
+    padding: 5px 5px 0 5px;
+}
+
+.loginRegister {
+    font-size: 12px;
+}
+
+.accountContainer{
+    display: flex;
+}

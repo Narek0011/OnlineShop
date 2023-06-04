@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+.container{
+    display: flex;
+    background: rgba(255,255,255,1);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.containerChild{
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+}
+
+.imageOne{
+    display: inline-block;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.imageOne > img {
+    transition: 300ms;
+    display: block;
+}
+
+.imageOne > img:hover{
+    transform: scale(1.1);
+}
+
+.imageTwo{
+    display: inline-block;
+    overflow: hidden;
+    margin-right: 20px;
+}
+.imageTwo > img {
+    transition: 300ms;
+    display: block;
+}
+.imageTwo > img:hover{
+    transform: scale(1.1);
+}
+
+.imageThree{
+    display: inline-block;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.imageThree > img {
+    transition: 300ms;
+    display: block;
+}
+.imageThree > img:hover{
+    transform: scale(1.1);
+}
+
+.imageFor{
+    display: inline-block;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.imageFor > img {
+    transition: 300ms;
+    display: block;
+}
+.imageFor > img:hover{
+    transform: scale(1.1);
+}
+
+.imageFife{
+    display: inline-block;
+    overflow: hidden;
+    background-color: #e2e2e2;
+}
+
+.imageFife > img {
+    transition: 300ms;
+    display: block;
+}
+.imageFife > img:hover{
+    transform: scale(1.2);
+}
+
+.imageOneBtn{
+    font-family: 'Montserrat';
+    position: absolute;
+    top: 10px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 18px;
+    color: rgba(51, 51, 51, 1);
+    text-align: center;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 1);
+    margin: 20px;
+    padding: 7px;
+    border: none;
+}
+
+.imageTwoBtn{
+    font-family: 'Montserrat';
+    position: absolute;
+    top: 10px;
+    left: 520px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 18px;
+    color: rgba(51, 51, 51, 1);
+    text-align: center;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 1);
+    margin: 20px;
+    padding: 7px;
+    border: none;
+}
+
+.imageThreeBtn{
+    font-family: 'Montserrat';
+    position: absolute;
+    top: 10px;
+    left: 780px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 18px;
+    color: rgba(51, 51, 51, 1);
+    text-align: center;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 1);
+    margin: 20px;
+    padding: 7px;
+    border: none;
+}
+
+.imageForBtn{
+    font-family: 'Montserrat';
+    position: absolute;
+    top: 270px;
+    left: 780px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 18px;
+    color: rgba(51, 51, 51, 1);
+    text-align: center;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 1);
+    margin: 20px;
+    padding: 7px;
+    border: none;
+}
+
+.imageFifeBtn{
+    font-family: 'Montserrat';
+    position: absolute;
+    top: 270px;
+    left: 1040px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 18px;
+    color: rgba(51, 51, 51, 1);
+    text-align: center;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 1);
+    margin: 20px;
+    padding: 7px;
+    border: none;
+}

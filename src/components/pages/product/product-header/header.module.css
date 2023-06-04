@@ -1,0 +1,25 @@
+.container{
+    background: rgba(20,102,120,1);
+    padding: 10px;
+}
+
+.headerTittles{
+    display: flex;
+    justify-content: center;
+ }
+
+.headerTittles div{
+    font-size: 14px;
+    color: rgba(195, 215, 219, 1);
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+    padding: 10px;
+}
+
+.headerTittles div:hover{
+    background: rgb(24, 125, 147);
+    border-radius: 25px;
+    padding: 10px;
+    cursor: pointer;
+}

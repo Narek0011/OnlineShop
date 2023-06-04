@@ -1,0 +1,25 @@
+.borderBottom{
+    border-bottom:1px solid #dddddd;
+}
+
+.container{
+    padding: 5px 0 5px 0;
+}
+.icon{
+    width: 12px;
+    height: 14px;
+    margin-left: 14px;
+}
+.iconDown{
+    width: 12px;
+    height: 14px;
+}
+.linksText{
+    font-size: 12px;
+    color: rgba(105, 105, 115, 1);
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+

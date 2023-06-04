@@ -1,0 +1,30 @@
+.confirm-box {
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: black;
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style the "OK" button */
+.confirm-box button.ok {
+    background-color: green;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 5px;
+    padding: 5px 10px;
+}
+
+/* Style the "Cancel" button */
+.confirm-box button.cancel {
+    background-color: red;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 5px 10px;
+}

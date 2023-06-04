@@ -1,0 +1,104 @@
+.title {
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 20px;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: initial;
+}
+
+.titleText {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 28px;
+    color: rgba(51, 51, 51, 1);
+    margin-bottom: 15px;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: initial;
+    text-align: left;
+}
+
+.containerBtn button {
+    display: flex;
+    justify-content: space-between;
+    width: 358px;
+    height: 40px;
+    padding: 8px 5px 0 5px;
+    margin:  5px 0 ;
+    border: none;
+    background-color: white;
+}
+
+.totalDate{
+    display: flex;
+    justify-content: space-between;
+    width: 358px;
+    background-color: white;
+    margin-top: 20px;
+    padding: 10px 5px 5px 60px;
+}
+
+.productInfo{
+    background: rgba(238,238,238,1);
+    padding: 20px;
+    margin-top: -40px;
+    margin-left: 20px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(221,221,221,1);
+}
+
+.bottomButtons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.bottomButtons button{
+    border: none;
+    border-radius: 0;
+    background-color: rgba(58, 71, 84, 1);
+    padding: 15px 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    color: white;
+}
+
+.bottomButtons button:hover{
+    color: rgba(255, 255, 255, 1) !important;
+    background: rgba(39, 123, 140, 1) !important;
+}
+
+.inputNumber{
+    width: 35px;
+    border-radius: 0;
+    border: none;
+}
+
+.editDelete{
+    display: flex;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.deleteBtn{
+    display: flex;
+    width: 30px;
+    height: 33px;
+    color: white;
+    background-color: red;
+    border-radius: 0;
+    justify-content: center;
+    align-items: center;
+}

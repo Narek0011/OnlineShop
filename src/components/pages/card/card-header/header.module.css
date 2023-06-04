@@ -1,0 +1,8 @@
+.container{
+    background: rgb(227, 227, 227);
+    display: block !important;
+    text-align: left;
+    padding: 10px 0 10px 10px;
+    white-space: normal;
+    -webkit-overflow-scrolling: touch;
+}
