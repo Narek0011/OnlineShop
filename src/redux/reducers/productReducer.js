@@ -37,11 +37,16 @@ function productReducer(state = initialState, action) {
         productsToCart: action.payload
       };
     case ADD_PRODUCT_IN_CART:
-      const data = [action.payload, ...state.productsToCart];
-      return {
-        ...state,
-        productsToCart: data
-      };
+      const productId = action.payload.product.id;
+      const productExists = state.productsToCart.some(({ product }) => product.id === productId);
+      console.log(action.payload.product);
+      if (!productExists) {
+        const data = [action.payload, ...state.productsToCart];
+        return {
+          ...state,
+          productsToCart: data
+        };
+      }
     case GET_PRODUCT:
       return {
         ...state,

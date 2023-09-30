@@ -8,16 +8,16 @@ import "@fontsource/montserrat";
 import "@fontsource/nunito-sans";
 import Footer from "./components/footer/footer";
 import Card from "./components/pages/card/card";
+import Success from "./components/pages/success";
+import Error from "./components/pages/error";
 import NotFound from "./components/pages/not-found/not-found";
 import Product from "./components/pages/product/product";
 import Login from "./components/pages/login/login";
 import Register from "./components/pages/register/register";
-import Checkout from "./components/pages/checkout/checkout";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function App() {
-  const currentPath = window.location.pathname;
 
   return (
     <>
@@ -28,7 +28,8 @@ function App() {
         <Route path="/product/:id" element={<Product />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/checkout" element={<Checkout />} />
+        <Route path="/success" element={<Success />} />
+        <Route path="/cancel" element={<Error />} />
         <Route path="/*" element={<NotFound />} />
       </Routes>
       <ToastContainer />

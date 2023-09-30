@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import './row-for.css'
+import './product-list.css'
 import 'bootstrap/dist/css/bootstrap.css';
 import Tabs from 'react-bootstrap/Tabs';
 import Tab from 'react-bootstrap/Tab';
@@ -14,12 +14,13 @@ import {connect} from "react-redux";
 import AddProductToCart from "./add-product-to-cart/add-product-to-cart";
 
 
-const RowFor = ({getProducts, newProducts}) => {
+const ProductList = ({getProducts, newProducts, pagination}) => {
 
   const [countPage, setCountPage] = useState(1);
   const [showModal, setShowModal] = useState(false);
   const [productColors, setProductColors] = useState([]);
   const [productId, setProductId] = useState(null);
+  const [defaultPagesCount, setDefaultPagesCount] = useState(0);
 
   useEffect(() => {
     (async () => {
@@ -27,12 +28,18 @@ const RowFor = ({getProducts, newProducts}) => {
     })()
   }, [countPage]);
 
+  useEffect(() => {
+    setDefaultPagesCount(pagination.product_pages)
+  }, [pagination])
+
   const handlePrev = () => {
     setCountPage(current => --current);
   };
 
   const handleNext = () => {
-    setCountPage(current => ++current);
+    if(defaultPagesCount && defaultPagesCount > countPage) {
+      setCountPage(current => ++current);
+    }
   };
 
   const handleSelect = (key) => {
@@ -69,7 +76,7 @@ const RowFor = ({getProducts, newProducts}) => {
                     productColors={productColors}
                   />
                   {
-                    newProducts.length && newProducts.map(({images, price, id, brand, model, color}) => (
+                    newProducts.length > 0 && newProducts.map(({images, price, id, brand, model, color}) => (
                       <div key={price + Math.random()} className="rowCard" style={{width: '18rem'}}>
                         <div className='imgContainer'>
                           <div>
@@ -126,7 +133,7 @@ const RowFor = ({getProducts, newProducts}) => {
               <div className={countPage !== 1 ? 'prevBtn' : 'prevBtn myDiv'} onClick={handlePrev}>
                 <img src={prev} alt="Prev btn"/>
               </div>
-              <div className={newProducts.length === 4 ? 'nextBtn' : 'nextBtn myDiv'} onClick={handleNext}>
+              <div className={'nextBtn'} onClick={handleNext}>
                 <img src={next} alt="Btn next"/>
               </div>
             </div>
@@ -151,4 +158,4 @@ const mapDispatchToProps = dispatch => {
   }
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(RowFor);
+export default connect(mapStateToProps, mapDispatchToProps)(ProductList);

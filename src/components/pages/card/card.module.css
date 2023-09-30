@@ -102,3 +102,13 @@
     justify-content: center;
     align-items: center;
 }
+
+.emptyList {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 400;
+}

@@ -6,6 +6,7 @@ import * as productAction from "../../../../redux/actions/productAction";
 import {connect} from "react-redux";
 import {useNavigate} from "react-router";
 import '../../../../assets/css/confirm.css'
+import {toast} from "react-toastify";
 
 const AddProductToCart = ({showModal, setShowModal, productColors,  productId, addDataProductToCart}) => {
 
@@ -23,7 +24,12 @@ const AddProductToCart = ({showModal, setShowModal, productColors,  productId, a
 
   const addToCart = () => {
     if(localStorage.getItem('user_id')){
-      addDataProductToCart({...dataProduct,  user_id: localStorage.getItem('user_id')});
+      addDataProductToCart({
+        ...dataProduct,
+         user_id: localStorage.getItem('user_id')
+        }).then(() => {
+          toast.success('Product added successfully!')
+        });
       setShowModal(false)
     }else{
       if (window.confirm('Please enter your email and password to continue.')) {
@@ -37,7 +43,6 @@ const AddProductToCart = ({showModal, setShowModal, productColors,  productId, a
       setDataProduct({count: 1})
     }
   }, [showModal]);
-
 
   return (
     <div>

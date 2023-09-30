@@ -23,7 +23,7 @@ export async function getProducts(dispatch, params) {
             })
         })
         .catch(err => {
-            console.log(err.message)
+            console.error(err.message)
         })
 }
 
@@ -63,7 +63,7 @@ export function getProductsToCart(dispatch, userId) {
 }
 
 export function deleteProductsToCart(dispatch, id) {
-    axiosClient.delete(`/deleteProductsToCart/${id}`)
+    return axiosClient.delete(`/deleteProductsToCart/${id}`)
         .then(() => {
             dispatch({
                 type: DELETE_PRODUCT_IN_CART,
@@ -74,12 +74,20 @@ export function deleteProductsToCart(dispatch, id) {
 }
 
 export async function updateProductToCart(dispatch, data) {
-    axiosClient.put('/updateProductToCart', data)
+    return axiosClient.put('/updateProductToCart', data)
         .then(res => {
             dispatch({
                 type: UPDATE_PRODUCT_IN_CART,
                 payload: res.data
             })
+        })
+        .catch(err => console.error(err.message))
+}
+
+export async function checkout() {
+    axiosClient.post('/checkout')
+        .then(res => {
+            window.location.href =  res.data.redirect_url;
         })
         .catch(err => console.error(err.message))
 }
